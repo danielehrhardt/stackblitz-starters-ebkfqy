@@ -1,0 +1,32 @@
+.banner {
+  position: relative;
+  max-width: 2000px;
+  width: 100%;
+  margin: auto; /* Center the banner */
+}
+
+.background-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.overlay-image,
+#countdownCanvas {
+  position: absolute;
+  right: 5%; /* Adjust for right alignment, closer to the edge */
+  transform: translateX(0); /* Adjust if needed for fine-tuning */
+}
+
+.overlay-image {
+  top: 30%; /* Position overlay above the countdown */
+  max-width: 15%; /* Adjust size as needed */
+  width: auto;
+  height: auto;
+}
+
+#countdownCanvas {
+  top: 50%; /* Position countdown below the overlay image */
+  width: 30%; /* Use percentage to scale with the banner */
+  height: auto; /* Maintain aspect ratio */
+  aspect-ratio: 4 / 1; /* Adjust based on desired aspect ratio */
+}
